@@ -2,246 +2,268 @@
 
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos Globais */
 body {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.8)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
     ),
     url(img/bg\ 1\ 2.png);
 }
 
 /* Cabeçalho */
 .header {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-    box-sizing: border-box;
+  width: 90vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  box-sizing: border-box;
 }
 
 .logo {
-    width: 2.5rem;
+  width: 2.5rem;
 }
 
 .logo,
 .book-link {
-    margin: 0 5rem;
+  margin: 0 5rem;
 }
 
 .menu__links {
-    display: flex;
-    gap: 3rem;
-    list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
 }
 
 .menu__link:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 0 50px;
-    box-shadow: 1px 2px #b18e47, 1px -1px #b18e47;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 50px;
+  box-shadow: 1px 2px #b18e47, 1px -1px #b18e47;
 }
 
 .menu__link {
-    text-decoration: none;
-    color: var(--P1, #e3f1ff);
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.2rem;
-    padding: 10px 20px;
+  text-decoration: none;
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  padding: 10px 20px;
 }
 
 .book-link {
-    display: inline-block;
-    color: var(--S1, #f5daa2);
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.3rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1.5;
+  display: inline-block;
+  color: var(--S1, #f5daa2);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.5;
 }
 
 /* Banner */
 .banner {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/Banner.jpg);
-    background-size: cover;
-    background-position: center top;
-    box-shadow: 0px 200px 26px 10px #000000, 0px 62px 8px 0px rgba(0, 0, 0, 0.5) inset;
-    background-color: rgba(0, 0, 0, 0.75);
-    background-blend-mode: multiply;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/Banner.jpg);
+  background-size: cover;
+  background-position: center top;
+  box-shadow: 0px 200px 26px 10px #000000,
+    0px 62px 8px 0px rgba(0, 0, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .bookname {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .bookname::after {
-    content: url("img/Right\ dec.svg");
-    right: -100px;
+  content: url("img/Right\ dec.svg");
+  right: -100px;
 }
 
 .bookname::before {
-    content: url("img/left\ dec.svg");
-    right: -100px;
+  content: url("img/left\ dec.svg");
+  right: -100px;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--P1, #e3f1ff);
-    text-align: center;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.95);
-    font-family: Cinzel Decorative;
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 112px;
-    padding: 0 80px;
-}
-
-.subtitulo {
-    display: flex;
-    justify-content: center;
-    color: var(--P1, #e3f1ff);
-    text-align: center;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.95);
-    font-family: Cinzel Decorative;
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--P1, #e3f1ff);
+  text-align: center;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.95);
+  font-family: Cinzel Decorative;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 112px;
+  padding: 0 80px;
 }
 
 .header-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 120px;
-    position: absolute;
-    bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 7.5rem;
+  position: absolute;
+  bottom: 5rem;
 }
 
 .header-link a {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid var(--P1, #e3f1ff);
-    color: var(--S1, #ffffff);
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    line-height: 20px;
-    margin-bottom: 8px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--P1, #e3f1ff);
+  color: var(--S1, #ffffff);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
 }
 
 /* Outros Estilos */
 .decorator {
-    width: 100%;
-    text-align: center;
+  width: 80vw;
+  text-align: center;
 }
 
 main {
-    margin: auto;
-    width: 80%;
+  margin: 0auto;
+  width: 80%;
 }
 
 main p {
-    text-align: start;
-    color: var(--P1, #e3f1ff);
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 1.5rem;
+  text-align: start;
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 1.5rem;
 }
 
-main p:nth-child(1) {
-    margin-top: 6rem;
+main .descricao:nth-child(1) {
+  margin-top: 6rem;
 }
 
 .imperfeitos {
-    text-align: end;
-    color: var(--S2, #dab978);
-    font-family: Poppins;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    margin-bottom: 6rem;
+  text-align: end;
+  color: var(--S2, #dab978);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 6rem;
 }
 
 main h2 {
-    color: var(--P1, #e3f1ff);
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
 }
 
 .ponto {
-    color: var(--S1, #f5daa2);
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
+  color: var(--S1, #f5daa2);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 5rem;
 }
 
 .card-container {
-    position: relative;
-    text-align: center;
-    width: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
 
-    &:hover{
-        filter: drop-shadow(2px -2px 1px  #b18e47);
-    }
+  &:hover {
+    filter: drop-shadow(2px -2px 1px #b18e47);
+  }
 }
 
 .card-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--S1, #f5daa2);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 5rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--S1, #f5daa2);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .card-image {
-    max-width: 100%;
-    
+  max-width: 100%;
+}
+
+.cite {
+  max-width: 60vw;
+  text-align: center;
+  margin: 5rem auto 2rem auto;
+  color: var(--P1, #e3f1ff);
+  text-align: center;
+  font-family: Cinzel Decorative;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.cite__autor {
+  display: flex;
+  justify-content: end;
+}
+
+.autor,
+.autor-posicao {
+  color: var(--S2, #dab978);
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.autor-posicao {
+  font-size: 0.9rem;
+  font-weight: 700;
 }
