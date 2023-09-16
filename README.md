@@ -13,7 +13,7 @@ Projeto desenvolvido para ser o Site do meu livro de fantasia.
 
 * CSS
 
-* Javascript
+* Grid
 
 * Flex-box
 
