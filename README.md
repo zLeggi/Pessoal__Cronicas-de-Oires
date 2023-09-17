@@ -1,4 +1,4 @@
-# Pessoal__Gerador-de-senhas
+# Pessoal__cronicas-de-oires
 
 ## Olá, Bem vindo ao meu projeto Crôncicas de Oires.
 Projeto desenvolvido para ser o Site do meu livro de fantasia. 
