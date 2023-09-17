@@ -98,19 +98,15 @@ body {
   width: 100%;
 }
 
-
-
 .titulo::after {
   content: url("img/Right\ dec.svg");
 }
 
 .titulo::before {
   content: url("img/left\ dec.svg");
-  
 }
 
 .titulo {
-
   display: flex;
   color: var(--P1, #e3f1ff);
   text-align: center;
@@ -119,7 +115,6 @@ body {
   font-size: 5rem;
   font-weight: 700;
   gap: 2rem;
-
 }
 
 .header-link {
@@ -155,6 +150,7 @@ body {
 main {
   margin: 0auto;
   width: 80%;
+  margin-bottom: 5rem;
 }
 
 main p {
@@ -269,3 +265,133 @@ main h2 {
   font-size: 0.9rem;
   font-weight: 700;
 }
+
+/* ————————————————— Secção final————————————————————— */
+
+.tiposPersonagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #171a1d;
+  box-shadow: 0px 0px 30px -0px rgba(244, 114, 31, 0.25),
+    0px 0px 30px 0px #585250;
+}
+
+.tiposPersonagens__dec {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 24px;
+  margin: 2rem;
+}
+
+.tiposPersonagens__dec::before,
+.tiposPersonagens__dec::after {
+  content: url(img/dimond.svg);
+
+  margin: auto 1rem;
+}
+
+.tiposPersonagens__content {
+  text-align: center;
+  width: 80%;
+}
+
+.tiposPersonagens__content h2 {
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.tiposPersonagens__content p {
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 1.5rem 0;
+}
+
+.tiposPersonagens__content h2,
+.tiposPersonagens__content p {
+  text-align: left;
+}
+
+.tiposPersonagens__content-span {
+  display: block;
+  margin: 1rem 0 6rem;
+}
+
+.book-link2 {
+  display: inline-block;
+  padding: 10px;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid var(--S1, #f5daa2);
+
+  color: var(--S1, #f5daa2);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: 0.27px;
+  margin-bottom: 40px;
+}
+
+/* ————————————————— Footer ————————————————————— */
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #000000;
+  justify-content: space-evenly;
+  padding: 6.5rem 0;
+}
+
+.footer p {
+  color: var(--P1, #e3f1ff);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contato, .contato a {
+  display: inline-block;
+  color: var(--P1, #e3f1ff);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: left;
+}
+
+.contato ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px ;
+  list-style: none;
+  margin: 20px 0;
+}
+
+li{
+  display: flex;
+  align-items: center;
+}
+.contato h3 {
+  font-weight: 500;
+}
+
+.fa{
+  margin: 0 8px;
+}
+
