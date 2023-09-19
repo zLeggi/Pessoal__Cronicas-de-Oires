@@ -17,7 +17,7 @@ Projeto desenvolvido para ser o Site do meu livro de fantasia.
 
 * Flex-box
 
-### Link para o projeto: https://pessoal-cronicas-de-oires-q3jfvzpa7-zleggi.vercel.app/
+### Link para o projeto: https://pessoal-cronicas-de-oires-751z.vercel.app/
 
 ## Feito por:
 ### Leandro Almeida ( zLeggi)
