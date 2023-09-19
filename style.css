@@ -16,7 +16,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.8)
     ),
-    url(img/bg\ 1\ 2.png);
+    url(img/bg.jpg);
 }
 
 /* Cabeçalho */
@@ -40,7 +40,7 @@ body {
 
 .menu__links {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   list-style-type: none;
 }
 
@@ -66,7 +66,6 @@ body {
   font-family: Poppins;
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.3rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1.5;
@@ -99,11 +98,11 @@ body {
 }
 
 .titulo::after {
-  content: url("img/Right\ dec.svg");
+  content: url("img/dec-right.svg");
 }
 
 .titulo::before {
-  content: url("img/left\ dec.svg");
+  content: url("img/dec-left.svg");
 }
 
 .titulo {
@@ -223,7 +222,7 @@ main h2 {
   color: var(--S1, #f5daa2);
   text-align: center;
   font-family: Poppins;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 5rem;
   letter-spacing: 0.1rem;
@@ -232,6 +231,7 @@ main h2 {
 
 .card-image {
   max-width: 100%;
+  border-radius: 0 50px ;
 }
 
 .cite {
@@ -289,7 +289,7 @@ main h2 {
 
 .tiposPersonagens__dec::before,
 .tiposPersonagens__dec::after {
-  content: url(img/dimond.svg);
+  content: url(img/dec-dimond.svg);
 
   margin: auto 1rem;
 }
